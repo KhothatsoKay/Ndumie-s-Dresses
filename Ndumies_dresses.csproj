@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Images\amazing.jpg" />
+    <Content Remove="wwwroot\Images\cartFilled.png" />
+    <Content Remove="wwwroot\Images\dress.jpg" />
+    <Content Remove="wwwroot\Images\overlay.jpg" />
+    <Content Remove="wwwroot\Images\Purple.jpg" />
+    <Content Remove="wwwroot\Images\sotho.jpg" />
+    <Content Remove="wwwroot\Images\TradDress.jpg" />
+    <Content Remove="wwwroot\Images\TradDress2.jpg" />
+    <Content Remove="wwwroot\Images\Umbaco.jpg" />
+    <Content Remove="wwwroot\Images\YellowDress.jpg" />
+    <Content Remove="wwwroot\Images\YellowXhosa.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\amazing.jpg" />
+    <None Include="wwwroot\Images\cartFilled.png" />
+    <None Include="wwwroot\Images\dress.jpg" />
+    <None Include="wwwroot\Images\overlay.jpg" />
+    <None Include="wwwroot\Images\Purple.jpg" />
+    <None Include="wwwroot\Images\sotho.jpg" />
+    <None Include="wwwroot\Images\TradDress.jpg" />
+    <None Include="wwwroot\Images\TradDress2.jpg" />
+    <None Include="wwwroot\Images\Umbaco.jpg" />
+    <None Include="wwwroot\Images\YellowDress.jpg" />
+    <None Include="wwwroot\Images\YellowXhosa.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>

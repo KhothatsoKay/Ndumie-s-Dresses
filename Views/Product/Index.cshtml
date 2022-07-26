@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_Layout";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width-device-width"/>
+    <title>Index</title>
+</head>
+
+<body style="background-color:lightyellow">
+    
+   
+  <div class="jumbotron">
+      <h2 style="font-family:'Verdana'">Welcome to Ndumie's</h2>
+      <p style="font-family: 'Segoe UI Symbol'"; >Please select a dress you would like to purchase by clicking the cart icon next to each dress.</p>
+      <p>Please note you can make special request for a design dress, Refer to our Contact Page.</p>
+  </div>
+        
+    <div class="jumbotron" >
+
+        <div class="carousel">
+            <h3 style="font-family: 'Liberation Mono'; text-align: center; text-decoration-color:black">Dresses</h3>
+            @foreach (var product in ViewBag.products)
+            {
+                
+
+             
+               
+
+
+        <p>
+            <img src="~/Images/@product.Photo" height="500" width="450" style="border-radius:30px" />
+            R@(Math.Round(product.Price, 2))
+            <a asp-controller="cart" asp-action="buy" asp-route-id="@product.Id">
+                <img src="~/Images/cartFilled.jpeg" width="50" />
+            </a>
+
+
+        </p>
+
+            }
+        </div>
+        </div>
+           
+        
+    
+</body>
+</html>
